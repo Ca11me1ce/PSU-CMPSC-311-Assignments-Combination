@@ -1,6 +1,25 @@
 # PSU CMPSC 311 Assignments Combination
 This is the combination of cmpsc 311 assignments in PSU.
 
+## Assignment #2 - CRUD Device Driver
+### Overview
+All remaining assignments for this class are based upon you providing an easily used set of functions
+so that an application that uses your code can easily talk to an external block storage device like a hard drive
+(HDD). This device already has its own pre-defined set of functions that allows communication with it.
+However, they are tedious to use (a common problem with hardware) and not as abstracted as programmers
+would prefer. Thus, we are going to translate them to mimic the standard C file commands (open, close, read,
+write, and seek) so that communicating to the device is easier for others. In other words, your application is
+acting like a driver for the HDD device. Our functions are called hdd_open, hdd_write, hdd_read, hdd_seek,
+and hdd_close.<br>
+
+## Assignment #3 - CRUD Device Driver
+### Overview
+All remaining assignments for this class are based on the creation and extension of a user-space device driver for a
+filesystem built on top of a object storage device. At the highest level, you will translate file system commands into
+storage array commands. These file system commands include open, read, write, and close for files that are written
+to your file system driver. These operations perform the same as the normal UNIX I/O operations, with the caveat
+that they direct file contents to the object storage device instead of the host filesystem.<br>
+
 ## Assignment #4 – Network Attached Storage
 The last assignment will extend the device driver you implemented in the previous
 assignment #3. You will extend your device driver to communicate with the HDD over a
