@@ -1,0 +1,652 @@
+x FORMAT 0 0:
+x MOUNT 0 0:
+simple.txt WRITE 138 0 :SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+penn-state-alma-mater.txt WRITE 54 0 :OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+penn-state-alma-mater.txt WRITE 85 0 :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+simple.txt WRITE 16 0 :qqqqqqqqqqqqqqqq
+simple.txt SEEK 0 78 :
+firecracker.txt WRITE 6 0 :llllll
+simple.txt WRITE 76 0 :jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+penn-state-alma-mater.txt WRITE 119 0 :nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+simple.txt SEEK 0 154 :
+firecracker.txt WRITE 244 0 :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+firecracker.txt WRITE 159 0 :kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+penn-state-alma-mater.txt WRITE 232 0 :OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+firecracker.txt WRITE 169 0 :bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+simple.txt SEEK 0 65 :
+simple.txt WRITE 89 0 :88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+firecracker.txt WRITE 235 0 :SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+penn-state-alma-mater.txt WRITE 38 0 :ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+firecracker.txt WRITE 234 0 :eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+simple.txt SEEK 0 123 :
+firecracker.txt WRITE 237 0 :000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+firecracker.txt WRITE 109 0 :NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+simple.txt READ 31 0 :
+simple.txt SEEK 0 45 :
+simple.txt READ 109 0 :
+simple.txt SEEK 0 140 :
+penn-state-alma-mater.txt WRITE 46 0 :ffffffffffffffffffffffffffffffffffffffffffffff
+simple.txt READ 14 0 :
+penn-state-alma-mater.txt WRITE 19 0 :lllllllllllllllllll
+simple.txt SEEK 0 47 :
+firecracker.txt WRITE 204 0 :999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+firecracker.txt WRITE 144 0 :hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+simple.txt SEEK 0 65 :
+simple.txt READ 89 0 :
+simple.txt SEEK 0 50 :
+firecracker.txt WRITE 155 0 :VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+simple.txt SEEK 0 49 :
+penn-state-alma-mater.txt SEEK 0 324 :
+penn-state-alma-mater.txt SEEK 0 500 :
+firecracker.txt SEEK 0 1453 :
+penn-state-alma-mater.txt READ 45 0 :
+penn-state-alma-mater.txt SEEK 0 216 :
+penn-state-alma-mater.txt READ 251 0 :
+simple.txt WRITE 105 0 :555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+penn-state-alma-mater.txt WRITE 124 0 :UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+firecracker.txt READ 171 0 :
+firecracker.txt SEEK 0 439 :
+penn-state-alma-mater.txt READ 2 0 :
+firecracker.txt WRITE 26 0 :vvvvvvvvvvvvvvvvvvvvvvvvvv
+penn-state-alma-mater.txt SEEK 0 398 :
+penn-state-alma-mater.txt WRITE 81 0 :AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+penn-state-alma-mater.txt SEEK 0 305 :
+simple.txt SEEK 0 43 :
+simple.txt READ 111 0 :
+penn-state-alma-mater.txt SEEK 0 344 :
+firecracker.txt WRITE 220 0 :wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+penn-state-alma-mater.txt READ 128 0 :
+simple.txt SEEK 0 89 :
+simple.txt SEEK 0 67 :
+simple.txt READ 87 0 :
+simple.txt SEEK 0 139 :
+simple.txt READ 15 0 :
+firecracker.txt SEEK 0 1026 :
+penn-state-alma-mater.txt READ 121 0 :
+simple.txt SEEK 0 153 :
+penn-state-alma-mater.txt SEEK 0 254 :
+penn-state-alma-mater.txt SEEK 0 99 :
+firecracker.txt WRITE 111 0 :aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+penn-state-alma-mater.txt WRITE 41 0 :qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+penn-state-alma-mater.txt SEEK 0 69 :
+simple.txt READ 1 0 :
+simple.txt SEEK 0 100 :
+penn-state-alma-mater.txt READ 182 0 :
+firecracker.txt READ 86 0 :
+firecracker.txt SEEK 0 900 :
+simple.txt READ 54 0 :
+firecracker.txt READ 107 0 :
+simple.txt SEEK 0 119 :
+simple.txt SEEK 0 50 :
+firecracker.txt READ 49 0 :
+firecracker.txt SEEK 0 19 :
+simple.txt SEEK 0 45 :
+firecracker.txt READ 11 0 :
+penn-state-alma-mater.txt WRITE 151 0 :3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+simple.txt READ 61 0 :
+firecracker.txt READ 192 0 :
+penn-state-alma-mater.txt SEEK 0 75 :
+simple.txt READ 48 0 :
+penn-state-alma-mater.txt SEEK 0 105 :
+simple.txt SEEK 0 57 :
+firecracker.txt WRITE 101 0 :VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+simple.txt SEEK 0 66 :
+penn-state-alma-mater.txt SEEK 0 157 :
+simple.txt SEEK 0 126 :
+firecracker.txt SEEK 0 1428 :
+firecracker.txt SEEK 0 1366 :
+firecracker.txt SEEK 0 1490 :
+firecracker.txt SEEK 0 1249 :
+penn-state-alma-mater.txt WRITE 78 0 :GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+penn-state-alma-mater.txt READ 40 0 :
+simple.txt SEEK 0 89 :
+firecracker.txt WRITE 58 0 :SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+firecracker.txt SEEK 0 1130 :
+penn-state-alma-mater.txt SEEK 0 2 :
+penn-state-alma-mater.txt WRITE 147 0 :lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+firecracker.txt WRITE 79 0 :bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+firecracker.txt SEEK 0 471 :
+penn-state-alma-mater.txt SEEK 0 266 :
+penn-state-alma-mater.txt WRITE 44 0 :EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+simple.txt READ 65 0 :
+simple.txt SEEK 0 38 :
+firecracker.txt WRITE 2 0 :mm
+firecracker.txt WRITE 156 0 :bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+firecracker.txt WRITE 165 0 :PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+simple.txt WRITE 116 0 :xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+firecracker.txt WRITE 219 0 :FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+simple.txt SEEK 0 3 :
+firecracker.txt WRITE 32 0 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+simple.txt WRITE 151 0 :5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+penn-state-alma-mater.txt WRITE 70 0 :KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+firecracker.txt SEEK 0 1566 :
+firecracker.txt WRITE 111 0 :555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+firecracker.txt WRITE 41 0 :44444444444444444444444444444444444444444
+simple.txt SEEK 0 22 :
+firecracker.txt READ 82 0 :
+firecracker.txt WRITE 66 0 :llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+simple.txt WRITE 132 0 :DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+simple.txt SEEK 0 91 :
+penn-state-alma-mater.txt READ 95 0 :
+penn-state-alma-mater.txt WRITE 118 0 :JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+penn-state-alma-mater.txt SEEK 0 428 :
+firecracker.txt WRITE 30 0 :JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+simple.txt WRITE 63 0 :DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+firecracker.txt SEEK 0 944 :
+simple.txt SEEK 0 127 :
+simple.txt SEEK 0 47 :
+firecracker.txt WRITE 2 0 :cc
+simple.txt READ 107 0 :
+firecracker.txt READ 91 0 :
+firecracker.txt READ 246 0 :
+simple.txt SEEK 0 115 :
+penn-state-alma-mater.txt WRITE 165 0 :GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+simple.txt SEEK 0 8 :
+firecracker.txt SEEK 0 269 :
+penn-state-alma-mater.txt SEEK 0 524 :
+simple.txt READ 146 0 :
+firecracker.txt READ 17 0 :
+penn-state-alma-mater.txt SEEK 0 550 :
+firecracker.txt SEEK 0 405 :
+simple.txt SEEK 0 88 :
+penn-state-alma-mater.txt READ 43 0 :
+penn-state-alma-mater.txt SEEK 0 204 :
+simple.txt READ 66 0 :
+simple.txt SEEK 0 15 :
+penn-state-alma-mater.txt SEEK 0 40 :
+penn-state-alma-mater.txt WRITE 182 0 :00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+firecracker.txt READ 101 0 :
+firecracker.txt READ 230 0 :
+simple.txt SEEK 0 61 :
+penn-state-alma-mater.txt SEEK 0 296 :
+penn-state-alma-mater.txt SEEK 0 288 :
+firecracker.txt READ 153 0 :
+penn-state-alma-mater.txt READ 45 0 :
+simple.txt SEEK 0 136 :
+simple.txt WRITE 18 0 :zzzzzzzzzzzzzzzzzz
+penn-state-alma-mater.txt SEEK 0 36 :
+firecracker.txt SEEK 0 442 :
+penn-state-alma-mater.txt WRITE 109 0 :ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+simple.txt SEEK 0 34 :
+simple.txt WRITE 120 0 :111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+penn-state-alma-mater.txt SEEK 0 347 :
+penn-state-alma-mater.txt SEEK 0 202 :
+simple.txt SEEK 0 148 :
+penn-state-alma-mater.txt READ 123 0 :
+penn-state-alma-mater.txt SEEK 0 397 :
+penn-state-alma-mater.txt SEEK 0 490 :
+simple.txt SEEK 0 75 :
+firecracker.txt WRITE 133 0 :ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+simple.txt SEEK 0 98 :
+firecracker.txt SEEK 0 1608 :
+firecracker.txt READ 50 0 :
+firecracker.txt SEEK 0 1869 :
+simple.txt READ 56 0 :
+simple.txt SEEK 0 27 :
+firecracker.txt WRITE 27 0 :ZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+penn-state-alma-mater.txt SEEK 0 30 :
+simple.txt SEEK 0 53 :
+simple.txt SEEK 0 124 :
+simple.txt WRITE 30 0 :nnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+simple.txt SEEK 0 152 :
+firecracker.txt SEEK 0 1032 :
+penn-state-alma-mater.txt READ 29 0 :
+penn-state-alma-mater.txt SEEK 0 427 :
+simple.txt SEEK 0 77 :
+firecracker.txt READ 185 0 :
+penn-state-alma-mater.txt WRITE 166 0 :GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+firecracker.txt SEEK 0 113 :
+firecracker.txt READ 237 0 :
+simple.txt SEEK 0 74 :
+simple.txt WRITE 24 0 :YYYYYYYYYYYYYYYYYYYYYYYY
+simple.txt READ 56 0 :
+penn-state-alma-mater.txt SEEK 0 248 :
+simple.txt SEEK 0 140 :
+firecracker.txt WRITE 32 0 :pppppppppppppppppppppppppppppppp
+simple.txt WRITE 14 0 :dddddddddddddd
+simple.txt SEEK 0 121 :
+firecracker.txt WRITE 102 0 :eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+firecracker.txt SEEK 0 1481 :
+penn-state-alma-mater.txt READ 210 0 :
+penn-state-alma-mater.txt WRITE 15 0 :iiiiiiiiiiiiiii
+firecracker.txt WRITE 230 0 :cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+simple.txt WRITE 33 0 :XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+simple.txt SEEK 0 60 :
+firecracker.txt READ 81 0 :
+penn-state-alma-mater.txt WRITE 55 0 :UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+firecracker.txt SEEK 0 1779 :
+simple.txt SEEK 0 142 :
+simple.txt WRITE 12 0 :oooooooooooo
+penn-state-alma-mater.txt READ 65 0 :
+penn-state-alma-mater.txt SEEK 0 246 :
+firecracker.txt READ 87 0 :
+penn-state-alma-mater.txt SEEK 0 366 :
+firecracker.txt WRITE 30 0 :yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+firecracker.txt SEEK 0 1319 :
+firecracker.txt SEEK 0 130 :
+penn-state-alma-mater.txt WRITE 119 0 :SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+simple.txt SEEK 0 18 :
+firecracker.txt WRITE 182 0 :cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+simple.txt WRITE 109 0 :FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+simple.txt WRITE 27 0 :BBBBBBBBBBBBBBBBBBBBBBBBBBB
+penn-state-alma-mater.txt SEEK 0 379 :
+firecracker.txt READ 179 0 :
+penn-state-alma-mater.txt SEEK 0 556 :
+firecracker.txt WRITE 5 0 :GGGGG
+simple.txt SEEK 0 146 :
+simple.txt READ 8 0 :
+firecracker.txt READ 34 0 :
+firecracker.txt READ 198 0 :
+simple.txt SEEK 0 29 :
+simple.txt WRITE 125 0 :mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+simple.txt SEEK 0 58 :
+firecracker.txt SEEK 0 1484 :
+firecracker.txt WRITE 160 0 :HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+simple.txt SEEK 0 80 :
+firecracker.txt SEEK 0 1494 :
+simple.txt WRITE 55 0 :wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+simple.txt READ 19 0 :
+firecracker.txt SEEK 0 540 :
+penn-state-alma-mater.txt SEEK 0 332 :
+firecracker.txt SEEK 0 339 :
+simple.txt SEEK 0 6 :
+firecracker.txt WRITE 126 0 :KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+firecracker.txt READ 92 0 :
+firecracker.txt SEEK 0 1687 :
+penn-state-alma-mater.txt READ 169 0 :
+firecracker.txt READ 209 0 :
+penn-state-alma-mater.txt READ 92 0 :
+penn-state-alma-mater.txt SEEK 0 55 :
+firecracker.txt SEEK 0 705 :
+firecracker.txt WRITE 256 0 :FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+simple.txt SEEK 0 12 :
+firecracker.txt SEEK 0 1314 :
+firecracker.txt WRITE 116 0 :hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+penn-state-alma-mater.txt SEEK 0 282 :
+firecracker.txt SEEK 0 558 :
+penn-state-alma-mater.txt SEEK 0 291 :
+simple.txt WRITE 142 0 :EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+firecracker.txt WRITE 29 0 :GGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+firecracker.txt WRITE 193 0 :9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+penn-state-alma-mater.txt WRITE 228 0 :RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+simple.txt SEEK 0 101 :
+penn-state-alma-mater.txt READ 74 0 :
+firecracker.txt READ 24 0 :
+penn-state-alma-mater.txt SEEK 0 555 :
+simple.txt READ 53 0 :
+firecracker.txt SEEK 0 1668 :
+simple.txt SEEK 0 50 :
+penn-state-alma-mater.txt READ 38 0 :
+penn-state-alma-mater.txt SEEK 0 197 :
+simple.txt READ 39 0 :
+firecracker.txt SEEK 0 729 :
+simple.txt WRITE 65 0 :TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+simple.txt SEEK 0 88 :
+firecracker.txt READ 66 0 :
+firecracker.txt SEEK 0 515 :
+simple.txt SEEK 0 103 :
+firecracker.txt WRITE 172 0 :2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+simple.txt READ 7 0 :
+firecracker.txt SEEK 0 480 :
+simple.txt WRITEAT 2 33 :12
+firecracker.txt SEEK 0 457 :
+simple.txt WRITEAT 9 87 :*12345678
+penn-state-alma-mater.txt SEEK 0 283 :
+penn-state-alma-mater.txt READ 51 0 :
+firecracker.txt SEEK 0 306 :
+firecracker.txt SEEK 0 680 :
+simple.txt WRITEAT 3 18 :890
+simple.txt WRITEAT 12 142 :*1234567890*
+firecracker.txt READ 66 0 :
+firecracker.txt SEEK 0 509 :
+simple.txt WRITEAT 10 76 :*123456789
+firecracker.txt SEEK 0 778 :
+simple.txt WRITEAT 4 0 :1234
+simple.txt WRITEAT 16 124 :4567890*12345678
+firecracker.txt SEEK 0 438 :
+penn-state-alma-mater.txt SEEK 0 296 :
+simple.txt WRITEAT 3 30 :90*
+simple.txt WRITEAT 9 21 :*12345678
+penn-state-alma-mater.txt WRITE 114 0 :KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+firecracker.txt SEEK 0 1379 :
+penn-state-alma-mater.txt READ 118 0 :
+firecracker.txt READ 203 0 :
+penn-state-alma-mater.txt SEEK 0 256 :
+firecracker.txt READ 207 0 :
+penn-state-alma-mater.txt SEEK 0 229 :
+simple.txt WRITEAT 2 140 :90
+simple.txt WRITEAT 7 96 :90*1234
+penn-state-alma-mater.txt READ 32 0 :
+simple.txt WRITEAT 12 64 :0*1234567890
+simple.txt WRITEAT 9 48 :567890*12
+simple.txt WRITEAT 7 57 :3456789
+firecracker.txt WRITEAT 16 762 :t be replaced*If
+firecracker.txt WRITEAT 2 8 :ve
+penn-state-alma-mater.txt WRITE 50 0 :XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+firecracker.txt WRITEAT 1 730 :t
+firecracker.txt WRITEAT 8 808 : holds*A
+penn-state-alma-mater.txt READ 208 0 :
+simple.txt WRITEAT 6 12 :234567
+simple.txt WRITEAT 8 4 :567890*1
+penn-state-alma-mater.txt READ 74 0 :
+simple.txt WRITEAT 12 103 :567890*12345
+simple.txt WRITEAT 4 44 :1234
+simple.txt WRITEAT 9 35 :34567890*
+simple.txt WRITEAT 9 115 :67890*123
+firecracker.txt WRITEAT 8 1126 :aby, you
+penn-state-alma-mater.txt SEEK 0 320 :
+penn-state-alma-mater.txt WRITE 40 0 :YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+penn-state-alma-mater.txt WRITE 99 0 :DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+simple.txt WRITEAT 1 86 :0
+penn-state-alma-mater.txt WRITE 14 0 :zzzzzzzzzzzzzz
+penn-state-alma-mater.txt WRITE 120 0 :LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+firecracker.txt WRITEAT 1 95 :v
+firecracker.txt WRITEAT 16 1674 :k*Come on, let y
+penn-state-alma-mater.txt SEEK 0 64 :
+penn-state-alma-mater.txt READ 242 0 :
+firecracker.txt WRITEAT 3 956 :a l
+firecracker.txt WRITEAT 6 1630 :t acro
+firecracker.txt WRITEAT 11 30 :c bag*Drift
+firecracker.txt WRITEAT 7 134 :se of c
+penn-state-alma-mater.txt SEEK 0 50 :
+penn-state-alma-mater.txt SEEK 0 374 :
+penn-state-alma-mater.txt SEEK 0 85 :
+firecracker.txt WRITEAT 14 516 :, "Aah, aah, a
+penn-state-alma-mater.txt WRITE 33 0 :888888888888888888888888888888888
+penn-state-alma-mater.txt READ 228 0 :
+firecracker.txt WRITEAT 4 1246 :*Bab
+penn-state-alma-mater.txt WRITE 104 0 :FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+penn-state-alma-mater.txt READ 73 0 :
+penn-state-alma-mater.txt WRITE 70 0 :zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+firecracker.txt WRITEAT 15 1065 :t it shine*Just
+firecracker.txt WRITEAT 15 867 :y all the doors
+firecracker.txt WRITEAT 7 1819 :he moon
+firecracker.txt WRITEAT 13 199 :uried deep si
+penn-state-alma-mater.txt SEEK 0 316 :
+firecracker.txt WRITEAT 5 1106 :h of 
+penn-state-alma-mater.txt READ 55 0 :
+penn-state-alma-mater.txt WRITEAT 4 377 :te,*
+firecracker.txt WRITEAT 3 891 :ed*
+firecracker.txt WRITEAT 3 1049 :the
+penn-state-alma-mater.txt WRITEAT 13 364 :e hands of fa
+firecracker.txt WRITEAT 9 1803 : brighter
+firecracker.txt WRITEAT 5 1789 :oom, 
+firecracker.txt WRITEAT 1 549 :r
+penn-state-alma-mater.txt WRITEAT 3 293 :h t
+penn-state-alma-mater.txt WRITEAT 4 332 :hild
+firecracker.txt WRITEAT 9 365 :ite the l
+firecracker.txt WRITEAT 1 1826 :,
+penn-state-alma-mater.txt WRITEAT 3 151 :ong
+firecracker.txt WRITEAT 11 1288 : colours bu
+penn-state-alma-mater.txt WRITEAT 12 271 :All with the
+firecracker.txt WRITEAT 15 563 :-y**Baby, you'r
+penn-state-alma-mater.txt WRITEAT 5 223 :right
+penn-state-alma-mater.txt WRITEAT 11 482 :ring shame*
+firecracker.txt WRITEAT 15 267 :Do you know tha
+penn-state-alma-mater.txt WRITEAT 11 138 :,*Raise the
+firecracker.txt WRITEAT 1 178 :u
+firecracker.txt WRITEAT 10 831 :e comes a 
+firecracker.txt WRITEAT 2 863 :n 
+penn-state-alma-mater.txt WRITEAT 12 300 : **(Softly) 
+firecracker.txt WRITEAT 3 1202 :, a
+firecracker.txt WRITEAT 13 179 : ever feel al
+firecracker.txt WRITEAT 11 593 :me on, let 
+penn-state-alma-mater.txt WRITEAT 13 64 : old State,*F
+firecracker.txt WRITEAT 15 350 : just gotta ign
+firecracker.txt WRITEAT 4 1497 :et i
+penn-state-alma-mater.txt WRITEAT 5 451 :(Loud
+firecracker.txt WRITEAT 1 1377 :B
+penn-state-alma-mater.txt WRITEAT 5 446 :e. **
+penn-state-alma-mater.txt WRITEAT 5 213 :es th
+penn-state-alma-mater.txt WRITEAT 13 433 :dear old Stat
+penn-state-alma-mater.txt WRITEAT 4 296 :hee.
+firecracker.txt WRITEAT 4 788 :knew
+firecracker.txt WRITEAT 16 392 :ine*Just own the
+penn-state-alma-mater.txt WRITEAT 6 0 :The Pe
+firecracker.txt WRITEAT 13 221 :der?*Screams 
+firecracker.txt WRITEAT 2 912 :on
+firecracker.txt WRITEAT 7 1447 :een ins
+penn-state-alma-mater.txt WRITEAT 1 103 : 
+penn-state-alma-mater.txt WRITEAT 4 267 :ee,*
+firecracker.txt WRITEAT 8 1608 : aah, aa
+penn-state-alma-mater.txt WRITEAT 11 154 :, raise the
+penn-state-alma-mater.txt WRITEAT 5 133 : wait
+penn-state-alma-mater.txt WRITEAT 3 493 :To 
+penn-state-alma-mater.txt WRITEAT 9 195 :alty,*Sin
+penn-state-alma-mater.txt WRITEAT 7 30 :red Lew
+penn-state-alma-mater.txt WRITEAT 16 77 :or her founders 
+firecracker.txt WRITEAT 7 72 :o start
+penn-state-alma-mater.txt WRITEAT 4 462 :May 
+penn-state-alma-mater.txt WRITEAT 14 119 :future that we
+penn-state-alma-mater.txt WRITEAT 7 239 :Rest, O
+firecracker.txt WRITEAT 3 1193 : go
+firecracker.txt WRITEAT 14 1403 :hter than the 
+firecracker.txt WRITEAT 6 1690 :our co
+penn-state-alma-mater.txt WRITEAT 1 218 :a
+penn-state-alma-mater.txt WRITEAT 6 325 :od at 
+penn-state-alma-mater.txt WRITEAT 14 518 :hy name,*May o
+penn-state-alma-mater.txt WRITEAT 6 426 :State,
+penn-state-alma-mater.txt WRITEAT 5 190 :d loy
+penn-state-alma-mater.txt WRITEAT 5 343 :gate,
+firecracker.txt WRITEAT 14 417 :ke the 4th of 
+penn-state-alma-mater.txt WRITEAT 5 37 :is Pa
+penn-state-alma-mater.txt WRITEAT 7 336 :hood's 
+firecracker.txt WRITEAT 12 241 :one seems to
+penn-state-alma-mater.txt WRITEAT 11 228 : and free,*
+penn-state-alma-mater.txt WRITEAT 15 399 :, dear old Stat
+firecracker.txt WRITEAT 4 47 :roug
+firecracker.txt WRITEAT 14 318 :use there's a 
+firecracker.txt WRITEAT 11 1827 : moon, moon
+firecracker.txt WRITEAT 9 1794 :boom*Even
+firecracker.txt WRITEAT 10 539 :u shoot ac
+penn-state-alma-mater.txt WRITEAT 7 57 :lory of
+penn-state-alma-mater.txt WRITEAT 2 55 : g
+firecracker.txt WRITEAT 4 647 :aah"
+firecracker.txt WRITEAT 4 192 :read
+firecracker.txt WRITEAT 14 332 :spark in you?*
+firecracker.txt WRITEAT 12 1151 :me on, show 
+penn-state-alma-mater.txt WRITEAT 2 149 : s
+firecracker.txt WRITEAT 5 816 :fter 
+penn-state-alma-mater.txt WRITEAT 1 432 : 
+penn-state-alma-mater.txt WRITEAT 4 219 :t, b
+firecracker.txt WRITEAT 9 530 :ah"*As yo
+firecracker.txt WRITEAT 3 1728 :ah,
+penn-state-alma-mater.txt WRITEAT 7 569 : State,
+penn-state-alma-mater.txt WRITEAT 16 251 :er dear, with th
+firecracker.txt WRITEAT 7 431 :July**'
+penn-state-alma-mater.txt WRITEAT 8 176 :ng our l
+firecracker.txt WRITEAT 15 1339 :gonna leave 'em
+penn-state-alma-mater.txt WRITEAT 10 283 :e, all wit
+firecracker.txt WRITEAT 15 1379 :om, boom, boom*
+penn-state-alma-mater.txt WRITEAT 6 456 :er) **
+penn-state-alma-mater.txt WRITEAT 1 204 :g
+penn-state-alma-mater.txt WRITEAT 10 93 :strong and
+firecracker.txt WRITEAT 9 63 :wanting t
+firecracker.txt WRITEAT 1 1232 :s
+firecracker.txt WRITEAT 1 1505 :r
+penn-state-alma-mater.txt WRITEAT 4 565 : old
+firecracker.txt WRITEAT 15 1111 :July**'Cause, b
+penn-state-alma-mater.txt WRITEAT 15 104 :great,*For the 
+penn-state-alma-mater.txt WRITEAT 15 503 :rt that loves t
+firecracker.txt WRITEAT 14 449 :, you're a fir
+firecracker.txt WRITEAT 9 693 :we**You d
+firecracker.txt WRITEAT 14 501 :rth*Make 'em g
+penn-state-alma-mater.txt WRITEAT 12 43 :tee**For the
+firecracker.txt WRITEAT 2 865 :wh
+firecracker.txt WRITEAT 3 490 :t y
+firecracker.txt WRITEAT 14 973 : your heart wi
+firecracker.txt WRITEAT 6 484 :em wha
+penn-state-alma-mater.txt WRITEAT 15 348 :*Shapeless in t
+firecracker.txt WRITEAT 13 550 :oss the sky-y
+penn-state-alma-mater.txt WRITEAT 6 576 : dear 
+firecracker.txt WRITEAT 11 901 :could open 
+firecracker.txt WRITEAT 16 651 :*You're gonna le
+firecracker.txt WRITEAT 3 609 :col
+penn-state-alma-mater.txt WRITEAT 16 539 :s but swell thy 
+penn-state-alma-mater.txt WRITEAT 11 165 : song. **Si
+penn-state-alma-mater.txt WRITEAT 6 184 :ove an
+penn-state-alma-mater.txt WRITEAT 7 496 :one hea
+penn-state-alma-mater.txt WRITEAT 12 414 :e,*Dear old 
+firecracker.txt WRITEAT 11 996 :nd when it'
+penn-state-alma-mater.txt WRITEAT 1 363 :h
+firecracker.txt WRITEAT 1 51 :h
+penn-state-alma-mater.txt WRITEAT 7 532 :ur live
+firecracker.txt WRITEAT 5 1891 :moon*
+firecracker.txt WRITEAT 11 1007 :s time you'
+penn-state-alma-mater.txt WRITEAT 14 16 :lma Mater*by F
+penn-state-alma-mater.txt WRITEAT 3 312 :**W
+penn-state-alma-mater.txt WRITEAT 5 246 : Moth
+firecracker.txt WRITEAT 1 29 :i
+firecracker.txt WRITEAT 4 151 :blow
+penn-state-alma-mater.txt WRITEAT 5 394 :ld us
+penn-state-alma-mater.txt WRITEAT 10 6 :nn State A
+penn-state-alma-mater.txt WRITEAT 10 555 :fame,*Dear
+penn-state-alma-mater.txt WRITEAT 13 381 :Thou didst mo
+firecracker.txt WRITEAT 3 116 :er 
+penn-state-alma-mater.txt WRITEAT 1 331 :c
+firecracker.txt WRITEAT 12 472 :e on, show '
+penn-state-alma-mater.txt WRITEAT 11 582 :old State. 
+firecracker.txt WRITEAT 10 1183 :h*Make 'em
+firecracker.txt WRITEAT 14 623 :Make 'em go, "
+firecracker.txt WRITEAT 3 196 :y b
+penn-state-alma-mater.txt WRITEAT 10 315 :hen we sto
+firecracker.txt WRITEAT 6 1299 :rst*Ma
+penn-state-alma-mater.txt WRITEAT 16 466 :no act of ours b
+penn-state-alma-mater.txt WRITEAT 8 205 : our hop
+penn-state-alma-mater.txt WRITEAT 1 42 :t
+firecracker.txt WRITEAT 11 1636 :ss the sky-
+firecracker.txt WRITEAT 7 755 :, canno
+firecracker.txt WRITEAT 9 408 : night li
+firecracker.txt WRITEAT 14 959 :ightning bolt,
+firecracker.txt WRITEAT 10 1485 :'s time to
+firecracker.txt WRITEAT 14 1433 :*It's always b
+firecracker.txt WRITEAT 16 79 : again?*Do you e
+firecracker.txt WRITEAT 15 1205 :ah, aah"*As you
+firecracker.txt WRITEAT 2 61 :, 
+firecracker.txt WRITEAT 9 1174 :u're wort
+firecracker.txt WRITEAT 15 1467 :ou, you*And now
+firecracker.txt WRITEAT 1 1556 :m
+firecracker.txt WRITEAT 11 1080 : own the ni
+firecracker.txt WRITEAT 1 639 :h
+firecracker.txt WRITEAT 5 374 :ight 
+firecracker.txt WRITEAT 10 1763 : in awe, a
+firecracker.txt WRITEAT 4 1335 :'re 
+firecracker.txt WRITEAT 12 1421 :, moon, moon
+firecracker.txt WRITEAT 4 1852 :oom*
+firecracker.txt WRITEAT 9 882 : are clos
+firecracker.txt WRITEAT 3 1266 :wor
+firecracker.txt WRITEAT 6 724 : a was
+firecracker.txt WRITEAT 14 1838 :*Boom, boom, b
+firecracker.txt WRITEAT 1 1378 :o
+firecracker.txt WRITEAT 8 1325 :, aah"*Y
+firecracker.txt WRITEAT 16 1354 : all in awe, awe
+firecracker.txt WRITEAT 8 1018 :ll know*
+firecracker.txt WRITEAT 8 213 : feet un
+firecracker.txt WRITEAT 12 1220 : shoot acros
+firecracker.txt WRITEAT 5 604 :your 
+firecracker.txt WRITEAT 6 41 :ing th
+firecracker.txt WRITEAT 9 52 : the wind
+firecracker.txt WRITEAT 14 1714 :em go, "Aah, a
+firecracker.txt WRITEAT 16 1773 :we, awe**Boom, b
+firecracker.txt WRITEAT 1 1134 :'
+firecracker.txt WRITEAT 8 170 :?**Do yo
+firecracker.txt WRITEAT 2 1244 :y*
+firecracker.txt WRITEAT 1 749 :i
+firecracker.txt WRITEAT 14 710 :e to feel like
+firecracker.txt WRITEAT 9 987 :ll glow*A
+firecracker.txt WRITEAT 11 1163 :'em what yo
+firecracker.txt WRITEAT 15 155 : from caving in
+firecracker.txt WRITEAT 6 1196 :, "Aah
+firecracker.txt WRITEAT 4 821 :a hu
+firecracker.txt WRITEAT 4 1417 :moon
+firecracker.txt WRITEAT 15 282 :t there's still
+firecracker.txt WRITEAT 5 688 :we, a
+firecracker.txt WRITEAT 16 1250 :y, you're a fire
+firecracker.txt WRITEAT 1 349 :u
+firecracker.txt WRITEAT 7 1396 :en brig
+firecracker.txt WRITEAT 12 1581 :re worth*Mak
+firecracker.txt WRITEAT 10 853 :be a reaso
+firecracker.txt WRITEAT 7 1812 : than t
+firecracker.txt WRITEAT 2 637 :Aa
+firecracker.txt WRITEAT 9 841 :rainbow**
+firecracker.txt WRITEAT 5 750 :ginal
+firecracker.txt WRITEAT 8 1696 :lours bu
+firecracker.txt WRITEAT 16 100 :eel, feel so pap
+firecracker.txt WRITEAT 10 920 : leads you
+firecracker.txt WRITEAT 4 96 :er f
+firecracker.txt WRITEAT 12 1879 :moon, moon, 
+firecracker.txt WRITEAT 6 1454 :ide of
+firecracker.txt WRITEAT 1 1710 :k
+firecracker.txt WRITEAT 14 1557 :e on, show 'em
+firecracker.txt WRITEAT 14 1026 :*You just gott
+firecracker.txt WRITEAT 4 1269 :k*Co
+firecracker.txt WRITEAT 8 297 : a chanc
+firecracker.txt WRITEAT 2 940 :rf
+firecracker.txt WRITEAT 13 736 :ace*You're or
+firecracker.txt WRITEAT 8 1856 :Even bri
+firecracker.txt WRITEAT 10 778 : you only 
+firecracker.txt WRITEAT 3 346 :*Yo
+firecracker.txt WRITEAT 2 1503 :th
+firecracker.txt WRITEAT 7 440 :use, ba
+firecracker.txt WRITEAT 5 119 :thin*
+firecracker.txt WRITEAT 16 1540 :re a firework*Co
+firecracker.txt WRITEAT 14 1311 : go, "Aah, aah
+firecracker.txt WRITEAT 1 515 :o
+firecracker.txt WRITEAT 3 1482 : it
+firecracker.txt WRITEAT 8 0 :Do you e
+firecracker.txt WRITEAT 7 234 :but no 
+firecracker.txt WRITEAT 10 1571 : what you'
+firecracker.txt WRITEAT 10 141 :ards, one 
+firecracker.txt WRITEAT 9 1040 :a ignite 
+firecracker.txt WRITEAT 6 1305 :ke 'em
+firecracker.txt WRITEAT 2 1394 :Ev
+firecracker.txt WRITEAT 2 1333 :ou
+firecracker.txt WRITEAT 1 212 :x
+firecracker.txt WRITEAT 15 1864 :ghter than the 
+firecracker.txt WRITEAT 13 305 :e for you*'Ca
+firecracker.txt WRITEAT 14 253 : hear a thing*
+firecracker.txt WRITEAT 15 1593 :e 'em go, "Aah,
+firecracker.txt WRITEAT 11 612 :ours burst*
+firecracker.txt WRITEAT 10 930 : to the pe
+firecracker.txt WRITEAT 9 1754 :e 'em all
+firecracker.txt WRITEAT 6 825 :rrican
+firecracker.txt WRITEAT 6 667 :ave 'e
+firecracker.txt WRITEAT 13 1731 : aah"*You're 
+firecracker.txt WRITEAT 2 447 :by
+firecracker.txt WRITEAT 12 944 :t road*Like 
+firecracker.txt WRITEAT 16 792 : what the future
+firecracker.txt WRITEAT 15 1091 :ght like the 4t
+firecracker.txt WRITEAT 7 894 :So you 
+firecracker.txt WRITEAT 7 1370 :, awe**
+firecracker.txt WRITEAT 15 1273 :me on, let your
+firecracker.txt WRITEAT 16 1135 :re a firework*Co
+firecracker.txt WRITEAT 8 702 :on't hav
+firecracker.txt WRITEAT 5 731 :ed sp
+firecracker.txt WRITEAT 13 1052 : light and le
+firecracker.txt WRITEAT 11 1233 : the sky-y-
+firecracker.txt WRITEAT 7 640 :, aah, 
+firecracker.txt WRITEAT 13 379 :and let it sh
+firecracker.txt WRITEAT 2 1501 :t 
+firecracker.txt WRITEAT 12 1662 :re a firewor
+firecracker.txt WRITEAT 10 124 :Like a hou
+firecracker.txt WRITEAT 10 1744 :gonna leav
+firecracker.txt WRITEAT 9 463 :ework*Com
+firecracker.txt WRITEAT 16 1520 :**'Cause, baby, 
+firecracker.txt WRITEAT 6 1704 :rst*Ma
+firecracker.txt WRITEAT 3 1711 :e '
+firecracker.txt WRITEAT 13 16 : like a plast
+firecracker.txt WRITEAT 2 438 :Ca
+firecracker.txt WRITEAT 2 1495 : l
+firecracker.txt WRITEAT 7 1460 : you, y
+firecracker.txt WRITEAT 15 1647 :y-y**Baby, you'
+firecracker.txt WRITEAT 15 578 :e a firework*Co
+firecracker.txt WRITEAT 8 493 :ou're wo
+firecracker.txt WRITEAT 6 10 :r feel
+firecracker.txt WRITEAT 14 1506 :ough-ough-ough
+firecracker.txt WRITEAT 4 1536 :you'
+firecracker.txt WRITEAT 14 1616 :h"*As you shoo
+firecracker.txt WRITEAT 2 942 :ec
+firecracker.txt WRITEAT 6 914 :e that
+firecracker.txt WRITEAT 15 673 :m all in awe, a
+firecracker.txt WRITEAT 3 850 :May
+x UNMOUNT 0 0:
