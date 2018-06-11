@@ -119,6 +119,39 @@ storage array commands. These file system commands include open, read, write, an
 to your file system driver. These operations perform the same as the normal UNIX I/O operations, with the caveat
 that they direct file contents to the object storage device instead of the host filesystem.<br>
 
+You drive will support:<br>
+* Tracking multiple open files simultaneously, by using a provided file table<br>
+* File data that persists between runs of a program, by implementing the basic filesystem operations of “format,” “mount,” and “unmount”<br>
+
+To help support your implementation, several new features (described in detail in the next section) are provided for you by the HDD interface and libcrud.a:<br>
+* Definitions of a file allocation table structure and file table to use in your code<br>
+* A special “priority object” in the object store which can be accessed at any time<br>
+* New HDD_FORMAT and HDD_CLOSE operations and an enhanced HDD_INIT command to support the format, mount, and unmount operations<br>
+
+
+### INIT, FORMAT, and CLOSE Commands
+The HDD command set has been augmented to allow object contents to be made persistent by saving the data to a file called crud_content.crd. You do not need to create this file or write to it yourself. Instead, the object store will manipulate the content file when you issue the following requests:<br>
+* CRUD_INIT: In addition to initializing the object store, this command will now also load any saved state from crud_content.crd (if that file exists). As in the previous assignment, you must issue an INIT request exactly once, before any other command is sent to the CRUD hardware.<br>
+* CRUD_FORMAT: This new command will delete crud_content.crd and all objects in the object store (including the priority object).<br>
+* CRUD_CLOSE: This new command will save the contents of the object store to the crud_content.crd file, creating it if it does not exist.<br>
+These new commands will be useful when implementing the new format, mount, and unmount features.<br>
+
+
+### Implement three new functions to handle operations involving the file allocation table:
+1. crud_format: Reinitializes the filesystem and creates an empty file allocation table. This func- tion
+should perform a normal CRUD_INIT followed by a CRUD_FORMAT, initialize the file allo- cation
+table with zeros (signifying that all slots are unused), and save the table by creating a priority object
+containing the table data.
+2. crud_mount: Loads an existing saved filesystem into the object store and file table. This function
+should first perform a normal CRUD_INIT if it has not already been run. Then it should locate the
+file allocation table (by reading the priority object) and copy its contents into the crud_file_table
+structure.
+3. crud_unmount: Saves all changes to the filesystem and object store. This function should store the
+current file table back in the storage device by updating the priority object. Once that is done, it should
+issue a CRUD_CLOSE request to the device, which will write out the persistent state file and shut down
+the virtual hardware.
+
+
 ## Assignment #4 – Network Attached Storage
 The last assignment will extend the device driver you implemented in the previous
 assignment #3. You will extend your device driver to communicate with the HDD over a
