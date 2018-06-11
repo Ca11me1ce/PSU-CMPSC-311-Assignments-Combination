@@ -157,16 +157,16 @@ We’ll now just have one:<br>
 
 To remove the three old functions, just make the following replacements:<br>
 * int hdd_initialize() becomes:<br>
- * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
-   * HddBitCmd cmd = all 0s except the op field is HDD_DEVICE and the flags field is HDD_INIT<br>
-   * void * data = NULL<br>
-   * Just check HddBitResp’s R bit to now determine success or failure of initialization<br>
+  * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
+    * HddBitCmd cmd = all 0s except the op field is HDD_DEVICE and the flags field is HDD_INIT<br>
+    * void * data = NULL<br>
+    * Just check HddBitResp’s R bit to now determine success or failure of initialization<br>
 * hdd_delete_block becomes:<br>
   * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
-   * [When deleting any block except the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the block ID field is the block you’d like to delete<br>
-   * [When deleting the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the flags field is HDD_META_BLOCK<br>
-   * void * data = NULL<br>
-   * Just check HddBitResp’s R bit for success or failure<br>
+    * [When deleting any block except the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the block ID field is the block you’d like to delete<br>
+    * [When deleting the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the flags field is HDD_META_BLOCK<br>
+    * void * data = NULL<br>
+    * Just check HddBitResp’s R bit for success or failure<br>
 * hdd_read_block_size becomes<br>
   * Nothing. You can finally save the size of a block.<br>
 
