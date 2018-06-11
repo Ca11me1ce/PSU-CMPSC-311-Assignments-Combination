@@ -45,6 +45,9 @@ int32_t hdd_delete_block(HddBlockID bid);
 HddBitResp hdd_data_lane(HddBitCmd command, void * data);
 ```
 You will not be able to see the internals of these functions (they are stored in a static library (.a) provided to you), but you can see the function declarations in the hdd_driver.h file. The first three (relatively simpler) functions are described below:
+
+|Function|Description|
+|---|---
 |hdd_initialize|This must be called only once throughout the entire program execution called (i.e. singleton pattern) and be called before any of the other three functions. This function initializes the device for communication. It returns 1 on success and -1 on failure.|
 |hdd_read_block_size|This function expects a block ID and returns its block size (in bytes). You must read the size of a block that exists (i.e., one you have already created) or it will return an error if the block does not exist. This function returns the block length on success and -1 on failure.|
 |hdd_delete_block|This function requires a block ID and deletes it and all data associated with it on the device. You must delete a block that exists or it will return an error if the block does not exist. This function returns 1 on success and -1 on failure. Note that a deleted block’s ID may be recycled again for use.|
@@ -61,22 +64,22 @@ They are both just 64-bits of information. DO NOT THINK THEY ARE MEANT TO BE INT
 These subdivisions can be thought of as a compact way for one function to have many parameters within just one parameter. Essentially, the HddBitCmd parameter allows you to specify a block to transfer data to or from, and that data is pointed to by the data parameter, which points to either the actual data to transmit or to where the received data should be stored. How the data parameter is used depends on the HddBitCmd’s fields. The exact meanings of the parameter, HddBitCmd, and the returned value, HddBitResp, are listed below:
 
 * Block ID<br>
-** In HddBitCmd: This is the block identifier of the block you are executing a command on. If the block does not yet exist, when trying to create one, leave this field as all 0s.<br>
-** In HddBitResp: hdd_data_lane returns the created block’s id if HddBitCmd’s Op field was HDD_BLOCK_CREATE (otherwise, it returns the same block ID you gave in the HddBitCmd).<br>
+  * In HddBitCmd: This is the block identifier of the block you are executing a command on. If the block does not yet exist, when trying to create one, leave this field as all 0s.<br>
+  * In HddBitResp: hdd_data_lane returns the created block’s id if HddBitCmd’s Op field was HDD_BLOCK_CREATE (otherwise, it returns the same block ID you gave in the HddBitCmd).<br>
 
 * Op - Opcode<br>
-** In HddBitCmd: This is the request type of the command you are trying to execute. The value can be one of HDD_BLOCK_CREATE , HDD_BLOCK_READ , or HDD_BLOCK_OVERWRITE (see next section for meaning of these).<br>
-** In HddBitResp: It will be the same Op as what you sent in HddBitCmd (thus, not useful).<br>
+  * In HddBitCmd: This is the request type of the command you are trying to execute. The value can be one of HDD_BLOCK_CREATE , HDD_BLOCK_READ , or HDD_BLOCK_OVERWRITE (see next section for meaning of these).<br>
+  * In HddBitResp: It will be the same Op as what you sent in HddBitCmd (thus, not useful).<br>
 
 * Block Size<br>
-** In HddBitCmd: This is the length of the block you request to read from, overwrite, or create. This is always the number of bytes in the data parameter that are read from and written to.<br>
-** In HddBitResp: It will be the same block size as what you sent in HddBitCmd (thus, not useful).<br>
+  * In HddBitCmd: This is the length of the block you request to read from, overwrite, or create. This is always the number of bytes in the data parameter that are read from and written to.<br>
+  * In HddBitResp: It will be the same block size as what you sent in HddBitCmd (thus, not useful).<br>
 
 * Flags - These are unused for this assignment (set to 0 in HddBitCmd).<br>
 
 * R- Result code:<br>
-** In HddBitCmd: Not used (set to 0).<br>
-** In HddBitResp: This is the success status of the command execution, where 0 (zero) signifies success, and 1 signifies failure. You must check the success value for each bus operation even though nothing should be failing.<br>
+  * In HddBitCmd: Not used (set to 0).<br>
+  * In HddBitResp: This is the success status of the command execution, where 0 (zero) signifies success, and 1 signifies failure. You must check the success value for each bus operation even though nothing should be failing.<br>
 
 The Op’s values can be found in hdd_driver.h, and below summarizes what they mean to help you understand
 how to use them in your application:<br>
