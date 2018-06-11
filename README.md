@@ -12,7 +12,6 @@ write, and seek) so that communicating to the device is easier for others. In ot
 acting like a driver for the HDD device. Our functions are called hdd_open, hdd_write, hdd_read, hdd_seek,
 and hdd_close.<br>
 <div align=center><img src=https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png>
-![image](https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png)
 </div>
 
 ## Assignment #3 - CRUD Device Driver
