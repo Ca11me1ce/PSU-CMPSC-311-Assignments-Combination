@@ -31,9 +31,9 @@ As a programmer, it is up to you to decide how to implement these functions. How
 |hdd_write|[1] This call writes a count number of bytes at the current position in the file associated with the file handle fh from the buffer data.<br>[2] The function returns -1 on failure, or the number of written read if successful.<br>[3] When number of bytes to written extends beyond the size of the block, a new block of a larger size should be created to hold the file.|
 |hdd_seek|[1] This call changes the current seek position of the file associated with the file handle fh to the position loc.<br>[2] The function returns -1 on failure (like seeking out range of the file) and 0 on success.|
 
-A central constraint to be enforced on your code is that you cannot maintain any file content or length information in any data structures after your functions have returned–all such data must be stored by the device and its blocks. Assumptions you can make for this assignment:
-** No file will become larger than the maximum block size (HDD_MAX_BLOCK_SIZE).
-** Your program will never have more than one file open at a time for this assignment.
+A central constraint to be enforced on your code is that you cannot maintain any file content or length information in any data structures after your functions have returned–all such data must be stored by the device and its blocks. Assumptions you can make for this assignment:<br>
+* No file will become larger than the maximum block size (HDD_MAX_BLOCK_SIZE).<br>
+* Your program will never have more than one file open at a time for this assignment.<br>
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
