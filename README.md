@@ -87,8 +87,6 @@ how to use them in your application:<br>
 * HDD_BLOCK_READ - This command reads a block (in its entirety) from the device and copies its contents into the passed data buffer. The Block Size field should be set to the exact size of the block you’re trying to read from (thus, you must read the entire block, not just parts of it). The data buffer should have enough allocated memory to store the entire block.<br>
 * HDD_BLOCK_OVERWRITE - This command will overwrite the contents of a block. Note that the block size CAN NEVER change. Thus, the call will fail unless the data buffer sent in is the same size as the original block created. Just like in HDD_BLOCK_CREATE, the data buffer should point to the start location of the data bytes to be transferred.<br>
 
-### General Compilation and Running Instructions [See class notes to help with some ofthese steps]
-
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
