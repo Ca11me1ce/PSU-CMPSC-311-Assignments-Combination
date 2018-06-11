@@ -35,6 +35,18 @@ A central constraint to be enforced on your code is that you cannot maintain any
 * No file will become larger than the maximum block size (HDD_MAX_BLOCK_SIZE).<br>
 * Your program will never have more than one file open at a time for this assignment.<br>
 
+
+### How to communicate with the device?
+>>In order to communicate with the device, there are four functions:
+```c
+>>> int32_t hdd_initialize();
+>>> int32_t hdd_read_block_size(HddBlockID bid);
+>>> int32_t hdd_delete_block(HddBlockID bid);
+>>> HddBitResp hdd_data_lane(HddBitCmd command, void * data);
+```
+
+
+
 ## Assignment #3 - CRUD Device Driver
 ### Overview
 All remaining assignments for this class are based on the creation and extension of a user-space device driver for a
