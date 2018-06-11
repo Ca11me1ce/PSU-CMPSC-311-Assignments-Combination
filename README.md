@@ -189,3 +189,13 @@ The first time you want to send a message to the server, you have to connect. Co
 To transfer the the HddBitCmd commands, you send the 64-bit request values over the network and receive the 64-bit response values. Note that you need to convert the 64 bit- values into network byte order before sending them and converting them to host byte order when receiving them. The functions htonll64 and ntohll64 are used to perform these conversions respectively and are provided for you in the cmpsc311_util.h file.
 
 Note that extra data needs to be sent or received for certain HddBitCmd’s (i.e. when reading from a block or writing to a block), but not for all of them. See Table 1 for information about which requests should send and receive buffers.
+
+|Op Field of HddBitCmd|Flags Field of HddBitCmd|What You Send|What You Receive|
+|---|---|---|---
+|HDD_DEVICE|HDD_INIT<br>HDD_FORMAT<br>HDD_SAVE_AND_CLOSE|HddBitCmd (only)|HddBitResp (only)|
+|HDD_BLOCK_CREATE|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd and bytes of block|HddBitResp (only)|
+|HDD_BLOCK_OVERWRITE|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd and bytes of block|HddBitResp (only)|
+|HDD_BLOCK_READ|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd (only)|HddBitResp and bytes of block|
+|HDD_BLOCK_DELETE|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd (only)|HddBitResp (only)|
+
+<div align=center><b>Table 1: HDD request messages: data sent and received with each HddBitCmd and flag pair</b></div>
