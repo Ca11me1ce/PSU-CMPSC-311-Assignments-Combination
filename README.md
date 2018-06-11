@@ -199,3 +199,51 @@ Note that extra data needs to be sent or received for certain HddBitCmd’s (i.e
 |HDD_BLOCK_DELETE|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd (only)|HddBitResp (only)|
 
 <div align=center><b>Table 1: HDD request messages: data sent and received with each HddBitCmd and flag pair</b></div>
+
+
+On sends that require sending a buffer, you simply send the buffer immediately after the 64-bit value. On receives, you first receive the 64-bit response value, convert it to host byte order, and extract the op type and block size. If the command requires a buffer be received, then you should receive data of length equal to that returned in the HddBitResp’s block size.<br>
+
+Note that the last thing you should do in your client program is after a HDD_SAVE_AND_CLOSE op type and is to disconnect from the server (i.e., close the socket).<br>
+
+To assist with connecting to the network and sending/receiving data, see the network slides posted on Canvas under assignment #4. Read them all, but specifically see Slide 34 for an overview and slide 49 for sample code demonstrating how you’d connect and send/receive bytes.<br>
+
+
+### Testing
+<b>[Note: please run “sudo apt-get install libgcrypt20-dev” before testing. Probably won’t matter for most of you but it might for a few others]</b><br>
+Overall, the testing is very similar to the previous assignment. One of the differences is that you’ll need to open two windows and execute the client in one and the server in the other. To run the server, use the command:<br>
+```bash
+./hdd_server –v
+```
+The server will run continuously without being restarted (unless you send the server something
+unexpected that causes it to halt). That is, the client can run several workloads by connecting to
+the server and sending commands. To run the client, use the command:<br>
+```bash
+./hdd_client -v <test arguments>
+```
+The first phase of testing the program is performed by using the unit test function for the hdd_file_io interface. The main function provided to you simply calls the function hddIOUnitTest. As before it’s with the following flags:<br>
+```bash
+./hdd_client -u –v
+```
+If the program completes successfully, the following should be displayed as the last log entry:<br>
+<div align=center><b>HDD unit tests completed successfully.</b></div><br>
+
+The second phase of testing will run workloads just like before, but now there’s three. These will test the mounting and unmounting of just like before and will save the state of the block storage to hdd_conent.svd. Make sure you run these commands sequentially as seen below:<br>
+```bash
+./hdd_client -v workload-one.txt
+./hdd_client -v workload-two.txt
+./hdd_client -v workload-three.txt
+```
+If the program completes successfully, the following should be displayed as the last log entry for each workload:<br>
+<div align=center><b>HDD simulation completed successfully.</b></div><br>
+
+The last phase of testing will extract the saved files from the filesystem. To do this, you will use the –x option:<br>
+```bash
+./hdd_client -v -x simple.txt
+```
+
+This should extract the file simple.txt from the device and write it to your current directory. Next, use the diff command to compare the contents of the file with the original version simple.txt.orig distributed with the original code:<br>
+```bash
+diff simple.txt simple.txt.orig
+```
+
+If they are identical, diff will give no output (i.e, no differences). Repeat these commands to extract and compare the content for the files raven.txt, hamlet.txt, penn-state-alma- mater.txt, firecracker.txt, and solitude.txt, and o44.txt (note the o44.txt is new). Just like before don’t try to extract the same file twice without first deleting the newly created .txt file.<br>
