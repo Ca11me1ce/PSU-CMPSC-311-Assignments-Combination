@@ -27,6 +27,8 @@ As a programmer, it is up to you to decide how to implement these functions. How
 |---|---
 |hdd_open|[1] This call opens a file (i.e., sets any initially needed metadata in your data structure) and returns a UNIQUE integer file handle (to be assigned by you).<br>[2] For this assignment, the file can be assumed to be non-existent on the device.<br>[3] You should initialize the device here (but only the first time this function is called i.e. singleton pattern).<br>[4] The function returns -1 on failure and UNIQUE integer on success.|
 |---|---
+|hdd_close|[1] This call closes the file referenced by the file handle.<br>[2] For this assignment, you are to delete all contents stored in the device’s blocksassociated with this file when it is closed.<br>[3] The function returns -1 on failure and 0 on success.
+|---|---|
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
