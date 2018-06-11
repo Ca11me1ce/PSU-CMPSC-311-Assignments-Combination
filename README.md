@@ -32,8 +32,8 @@ As a programmer, it is up to you to decide how to implement these functions. How
 |hdd_seek|[1] This call changes the current seek position of the file associated with the file handle fh to the position loc.<br>[2] The function returns -1 on failure (like seeking out range of the file) and 0 on success.|
 
 A central constraint to be enforced on your code is that you cannot maintain any file content or length information in any data structures after your functions have returned–all such data must be stored by the device and its blocks. Assumptions you can make for this assignment:
-**No file will become larger than the maximum block size (HDD_MAX_BLOCK_SIZE).
-**Your program will never have more than one file open at a time for this assignment.
+** No file will become larger than the maximum block size (HDD_MAX_BLOCK_SIZE).
+** Your program will never have more than one file open at a time for this assignment.
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
