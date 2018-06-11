@@ -198,7 +198,7 @@ Note that extra data needs to be sent or received for certain HddBitCmd’s (i.e
 |HDD_BLOCK_READ|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd (only)|HddBitResp and bytes of block|
 |HDD_BLOCK_DELETE|HDD_NULL_FLAG<br>HDD_META_BLOCK|HddBitCmd (only)|HddBitResp (only)|
 
-<div align=center><b>Table 1: HDD request messages: data sent and received with each HddBitCmd and flag pair</b></div>
+<div align=center><b>Table 1: HDD request messages: data sent and received with each HddBitCmd and flag pair</b></div><br>
 
 
 On sends that require sending a buffer, you simply send the buffer immediately after the 64-bit value. On receives, you first receive the 64-bit response value, convert it to host byte order, and extract the op type and block size. If the command requires a buffer be received, then you should receive data of length equal to that returned in the HddBitResp’s block size.<br>
