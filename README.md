@@ -87,6 +87,29 @@ how to use them in your application:<br>
 * HDD_BLOCK_READ - This command reads a block (in its entirety) from the device and copies its contents into the passed data buffer. The Block Size field should be set to the exact size of the block you’re trying to read from (thus, you must read the entire block, not just parts of it). The data buffer should have enough allocated memory to store the entire block.<br>
 * HDD_BLOCK_OVERWRITE - This command will overwrite the contents of a block. Note that the block size CAN NEVER change. Thus, the call will fail unless the data buffer sent in is the same size as the original block created. Just like in HDD_BLOCK_CREATE, the data buffer should point to the start location of the data bytes to be transferred.<br>
 
+### General Compilation and Running Instructions
+1. From your virtual machine, download the starter source code provided for this assignment. Move the tgz file to your assignment directory.
+2. Install this dependency you will need via the terminal:
+```bash
+% sudo apt-get install libgcrypt11-dev
+```
+3. Have the terminal open to the directory where the .tgz starter code file is located. Now unpackage the contents of the file:
+```bash
+% tar xvfz assign2-starter.tgz
+```
+4. You should be able to use the Makefile provided to build the program without modification thus just compile by typing:
+```bash
+% make clean; make
+```
+5. To get started, focus on hdd_file_io.c. This file contains code templates for the functions you MUST fill in as described above.
+6. Add appropriate English comments to your functions stating what the code is doing. All code must be correctly (and consistently) indented. Use your favorite text editor to help with this process! You will lose points if you do not comment and indent appropriately. Graders and TAs will need to understand your comments to follow your code and grade. Do not forget to add comments to the Makefile. The Makefile structure has been explained in class.
+7. Built into hdd_file_io.c file is a function called hddIOUnitTest, which is automatically called when you run the program to check for its correctness. The main() function simply calls the function hddIOUnitTest . Page 5 of 7If you have implemented your code correctly, it should run to completion successfully. To test the program, you execute the simulated filesystem using the -u and -v options, as:
+```bash
+./hddsim -u -v
+```
+If the program completes successfully, the following should be displayed as the last log entry:
+<b>HDD unit tests completed successfully.</b>
+
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
