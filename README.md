@@ -158,17 +158,17 @@ We’ll now just have one:<br>
 To remove the three old functions, just make the following replacements:<br>
 * int hdd_initialize() becomes:<br>
  * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
-  * HddBitCmd cmd = all 0s except the op field is HDD_DEVICE and the flags field is HDD_INIT<br>
-  * void * data = NULL<br>
-  * Just check HddBitResp’s R bit to now determine success or failure of initialization<br>
+   * HddBitCmd cmd = all 0s except the op field is HDD_DEVICE and the flags field is HDD_INIT<br>
+   * void * data = NULL<br>
+   * Just check HddBitResp’s R bit to now determine success or failure of initialization<br>
 * hdd_delete_block becomes:<br>
   * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
-   *[When deleting any block except the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the block ID field is the block you’d like to delete<br>
+   * [When deleting any block except the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the block ID field is the block you’d like to delete<br>
    * [When deleting the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the flags field is HDD_META_BLOCK<br>
    * void * data = NULL<br>
    * Just check HddBitResp’s R bit for success or failure<br>
 * hdd_read_block_size becomes<br>
- * Nothing. You can finally save the size of a block.<br>
+  * Nothing. You can finally save the size of a block.<br>
 
 Note your other hdd_data_lane calls don’t need changing unless you’ve been manually typing in 3 for your op code instead of HDD_DEVICE. If you have been, simply replace all occurrences of 3 with HDD_DEVICE.<br>
 
