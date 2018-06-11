@@ -20,6 +20,8 @@ storage array commands. These file system commands include open, read, write, an
 to your file system driver. These operations perform the same as the normal UNIX I/O operations, with the caveat
 that they direct file contents to the object storage device instead of the host filesystem.<br>
 
+![image](https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png)
+
 ## Assignment #4 – Network Attached Storage
 The last assignment will extend the device driver you implemented in the previous
 assignment #3. You will extend your device driver to communicate with the HDD over a
