@@ -108,7 +108,7 @@ how to use them in your application:<br>
 ./hddsim -u -v
 ```
 If the program completes successfully, the following should be displayed as the last log entry:<br>
-<b>HDD unit tests completed successfully.</b><br>
+<div align=center><b>HDD unit tests completed successfully.</b><br></div>
 
 
 ## Assignment #3 - CRUD Device Driver
