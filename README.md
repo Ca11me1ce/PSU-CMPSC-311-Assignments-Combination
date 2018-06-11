@@ -145,6 +145,47 @@ code from assignment #3. The assignment requires you to perform the following st
 getting the starter code and copying over needed files from your implementation of the
 previous assignment):<br>
 
-1. Slightly modify your hdd_file_io.c to remove 3 functions<br>
-2. Minor naming change in hdd_file_io.c and adding an include<br>
-3. Bulk of the project: hdd_client_operation<br>
+### 1. Slightly modify your hdd_file_io.c to remove 3 functions<br>
+Before delving into the networking code, this assignment simplifies (in a sense) the API you’ve been using to communicate with the device. Instead of having all of the following functions:<br>
+* hdd_data_lane<br>
+* hdd_read_block_size<br>
+* hdd_delete_block<br>
+* hdd_initialize<br>
+
+We’ll now just have one:<br>
+* hdd_data_lane<br>
+
+To remove the three old functions, just make the following replacements:<br>
+* int hdd_initialize() becomes:<br>
+ * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
+  * HddBitCmd cmd = all 0s except the op field is HDD_DEVICE and the flags field is HDD_INIT<br>
+  * void * data = NULL<br>
+  * Just check HddBitResp’s R bit to now determine success or failure of initialization<br>
+* hdd_delete_block becomes:<br>
+  * HddBitResp hdd_data_lane(HddBitCmd cmd, void * data) where<br>
+   *[When deleting any block except the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the block ID field is the block you’d like to delete<br>
+   * [When deleting the meta block] HddBitCmd cmd = all 0s except the op field is HDD_DELETE and the flags field is HDD_META_BLOCK<br>
+   * void * data = NULL<br>
+   * Just check HddBitResp’s R bit for success or failure<br>
+* hdd_read_block_size becomes<br>
+ * Nothing. You can finally save the size of a block.<br>
+
+Note your other hdd_data_lane calls don’t need changing unless you’ve been manually typing in 3 for your op code instead of HDD_DEVICE. If you have been, simply replace all occurrences of 3 with HDD_DEVICE.<br>
+
+
+### 2. Minor naming change in hdd_file_io.c and adding an include<br>
+We’re now going to replace all hdd_data_lane function calls with the name hdd_client_operation. The hdd_client_operation function is defined in a new file hdd_client.c as follows:<br>
+```c
+HddBitResp hdd_client_operation(HddBitCmd cmd, void * data);
+```
+You can see it accepts and returns the same values as hdd_data_lane. Abstractly, this function performs the same function as the original hdd_data_lane function it is replacing. What it does specifically will be explained in the next section. For now, just make the name change and include hdd_network.h in your hdd_file_io.c file.<br>
+
+
+### 3. Bulk of the project: hdd_client_operation<br>
+The remainder of the assignment is your implementation of the hdd_client_operation function in the hdd_client.c file. The idea is that you will coordinate with a server via a network protocol to transfer the commands and data from the client to the server. The server will execute the commands and modify the HDD storage accordingly. Thus, the client code you’re writing is just a messenger for what used to be hdd_data_lane commands.<br>
+
+The first time you want to send a message to the server, you have to connect. Connect to address HDD_DEFAULT_IP and port HDD_DEFAULT_PORT, both of which are defined in the hdd_network.h file.
+
+To transfer the the HddBitCmd commands, you send the 64-bit request values over the network and receive the 64-bit response values. Note that you need to convert the 64 bit- values into network byte order before sending them and converting them to host byte order when receiving them. The functions htonll64 and ntohll64 are used to perform these conversions respectively and are provided for you in the cmpsc311_util.h file.
+
+Note that extra data needs to be sent or received for certain HddBitCmd’s (i.e. when reading from a block or writing to a block), but not for all of them. See Table 1 for information about which requests should send and receive buffers.
