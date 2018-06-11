@@ -1,5 +1,5 @@
 # PSU CMPSC 311 Assignments Combination
-This is the combination of cmpsc 311 assignments in PSU.
+<b>This is the combination of cmpsc 311 assignments in PSU.</b>
 
 ## Assignment #2 - CRUD Device Driver
 ### Overview
