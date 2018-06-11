@@ -11,6 +11,7 @@ would prefer. Thus, we are going to translate them to mimic the standard C file 
 write, and seek) so that communicating to the device is easier for others. In other words, your application is
 acting like a driver for the HDD device. Our functions are called hdd_open, hdd_write, hdd_read, hdd_seek,
 and hdd_close.<br>
+![image](https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png)
 
 ## Assignment #3 - CRUD Device Driver
 ### Overview
@@ -19,8 +20,6 @@ filesystem built on top of a object storage device. At the highest level, you wi
 storage array commands. These file system commands include open, read, write, and close for files that are written
 to your file system driver. These operations perform the same as the normal UNIX I/O operations, with the caveat
 that they direct file contents to the object storage device instead of the host filesystem.<br>
-
-![image](https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png)
 
 ## Assignment #4 – Network Attached Storage
 The last assignment will extend the device driver you implemented in the previous
