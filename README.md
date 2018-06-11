@@ -37,14 +37,54 @@ A central constraint to be enforced on your code is that you cannot maintain any
 
 
 ### How to communicate with the device?
->>In order to communicate with the device, there are four functions:
+In order to communicate with the device, there are four functions:
 ```c
->>> int32_t hdd_initialize();
->>> int32_t hdd_read_block_size(HddBlockID bid);
->>> int32_t hdd_delete_block(HddBlockID bid);
->>> HddBitResp hdd_data_lane(HddBitCmd command, void * data);
+int32_t hdd_initialize();
+int32_t hdd_read_block_size(HddBlockID bid);
+int32_t hdd_delete_block(HddBlockID bid);
+HddBitResp hdd_data_lane(HddBitCmd command, void * data);
 ```
+You will not be able to see the internals of these functions (they are stored in a static library (.a) provided to you), but you can see the function declarations in the hdd_driver.h file. The first three (relatively simpler) functions are described below:
+|hdd_initialize|This must be called only once throughout the entire program execution called (i.e. singleton pattern) and be called before any of the other three functions. This function initializes the device for communication. It returns 1 on success and -1 on failure.|
+|hdd_read_block_size|This function expects a block ID and returns its block size (in bytes). You must read the size of a block that exists (i.e., one you have already created) or it will return an error if the block does not exist. This function returns the block length on success and -1 on failure.|
+|hdd_delete_block|This function requires a block ID and deletes it and all data associated with it on the device. You must delete a block that exists or it will return an error if the block does not exist. This function returns 1 on success and -1 on failure. Note that a deleted block’s ID may be recycled again for use.|
 
+The hdd_data_lane function, the most complicated function of the four has been designed for your application to transfer data to and from the device. The function allows you to create a block (and give it data), read data from a block, and overwrite a block with new data. First examine the HddBitCmd parameter and the HddBitResp return value. They are defined in the hdd_driver.h file as:
+```c
+typedef uint64_t HddBitCmd;
+typedef uint64_t HddBitResp;
+```
+They are both just 64-bits of information. DO NOT THINK THEY ARE MEANT TO BE INTERPRETED AS 64-BIT INTEGERS EVEN THOUGHT THEIR TYPES ARE 64-BIT INTEGERS. Yes, these parameters are of 64-bit integer type, but in the hdd_data_lane function, those 64-bits are taken in as a word and divided into sections (using bitwise operators) that each have their own meanings (figure below). The lower 32 bits represent a parameter called Block ID, the next bit represents a parameter called R, and so on. See the below figure:
+<div align=center><img src=https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/64bit_block.png>
+</div><br>
+
+These subdivisions can be thought of as a compact way for one function to have many parameters within just one parameter. Essentially, the HddBitCmd parameter allows you to specify a block to transfer data to or from, and that data is pointed to by the data parameter, which points to either the actual data to transmit or to where the received data should be stored. How the data parameter is used depends on the HddBitCmd’s fields. The exact meanings of the parameter, HddBitCmd, and the returned value, HddBitResp, are listed below:
+
+* Block ID<br>
+** In HddBitCmd: This is the block identifier of the block you are executing a command on. If the block does not yet exist, when trying to create one, leave this field as all 0s.<br>
+** In HddBitResp: hdd_data_lane returns the created block’s id if HddBitCmd’s Op field was HDD_BLOCK_CREATE (otherwise, it returns the same block ID you gave in the HddBitCmd).<br>
+
+* Op - Opcode<br>
+** In HddBitCmd: This is the request type of the command you are trying to execute. The value can be one of HDD_BLOCK_CREATE , HDD_BLOCK_READ , or HDD_BLOCK_OVERWRITE (see next section for meaning of these).<br>
+** In HddBitResp: It will be the same Op as what you sent in HddBitCmd (thus, not useful).<br>
+
+* Block Size<br>
+** In HddBitCmd: This is the length of the block you request to read from, overwrite, or create. This is always the number of bytes in the data parameter that are read from and written to.<br>
+** In HddBitResp: It will be the same block size as what you sent in HddBitCmd (thus, not useful).<br>
+
+* Flags - These are unused for this assignment (set to 0 in HddBitCmd).<br>
+
+* R- Result code:<br>
+** In HddBitCmd: Not used (set to 0).<br>
+** In HddBitResp: This is the success status of the command execution, where 0 (zero) signifies success, and 1 signifies failure. You must check the success value for each bus operation even though nothing should be failing.<br>
+
+The Op’s values can be found in hdd_driver.h, and below summarizes what they mean to help you understand
+how to use them in your application:<br>
+* HDD_BLOCK_CREATE - This command creates a block whose size is defined in the Block Size field of the HddBitCmd. The data buffer passed to hdd_data_lane should point to the start location of the data bytes to be transferred. After completion, the data has now been saved to the newly created block on the device. If successful, the operation will return the new block ID in the HddBitResp’s Block ID field.<br>
+* HDD_BLOCK_READ - This command reads a block (in its entirety) from the device and copies its contents into the passed data buffer. The Block Size field should be set to the exact size of the block you’re trying to read from (thus, you must read the entire block, not just parts of it). The data buffer should have enough allocated memory to store the entire block.<br>
+* HDD_BLOCK_OVERWRITE - This command will overwrite the contents of a block. Note that the block size CAN NEVER change. Thus, the call will fail unless the data buffer sent in is the same size as the original block created. Just like in HDD_BLOCK_CREATE, the data buffer should point to the start location of the data bytes to be transferred.<br>
+
+### General Compilation and Running Instructions [See class notes to help with some ofthese steps]
 
 
 ## Assignment #3 - CRUD Device Driver
