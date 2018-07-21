@@ -3,7 +3,7 @@
 
 ## Assignment #2 - CRUD Device Driver
 ### Overview
-All remaining assignments for this class are based upon you providing an easily used set of functionsso that an application that uses your code can easily talk to an external block storage device like a hard drive(HDD). This device already has its own pre-defined set of functions that allows communication with it.However, they are tedious to use (a common problem with hardware) and not as abstracted as programmerswould prefer. Thus, we are going to translate them to mimic the standard C file commands (open, close, read,write, and seek) so that communicating to the device is easier for others. In other words, your application isacting like a driver for the HDD device. Our functions are called hdd_open, hdd_write, hdd_read, hdd_seek,and hdd_close.<br>
+All remaining assignments for this class are based upon you providing an easily used set of functions so that an application that uses your code can easily talk to an external block storage device like a hard drive(HDD). This device already has its own pre-defined set of functions that allows communication with it.However, they are tedious to use (a common problem with hardware) and not as abstracted as programmerswould prefer. Thus, we are going to translate them to mimic the standard C file commands (open, close, read,write, and seek) so that communicating to the device is easier for others. In other words, your application isacting like a driver for the HDD device. Our functions are called hdd_open, hdd_write, hdd_read, hdd_seek,and hdd_close.<br>
 <div align=center><img src=https://github.com/Ca11me1ce/Image-Repo/blob/master/cmpsc311_images/QQ%E6%88%AA%E5%9B%BE20180611153731.png>
 </div><br>
 
